@@ -1,4 +1,6 @@
-rubysdl_frame
-=============
+# rubysdl_frame
 
 Simple Ruby/SDL picture frame script
+
+## License
+MIT
