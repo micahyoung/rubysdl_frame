@@ -29,7 +29,7 @@ while true
     scale, x_offset, y_offset = scale_and_offset(image.w, image.h, SCREEN_WIDTH, SCREEN_HEIGHT)
 
     screen.fill_rect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, BLACK)
-    SDL::Surface.transform_blit(image, screen, 0, scale, scale, 0, 0, x_offset.to_i, y_offset.to_i, 0)
+    SDL::Surface.transform_draw(image, screen, 0, scale, scale, 0, 0, x_offset.to_i, y_offset.to_i, 0)
     image.destroy
     screen.update_rect(0, 0, 0, 0)
 
